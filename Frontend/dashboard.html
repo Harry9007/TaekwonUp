@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dashboard | TaekWonUp</title>
+
+    <!-- Verifica que tu carpeta de estilos se llame 'css' -->
+    <link rel="stylesheet" href="css/estilos.css">
+
+    <!-- FontAwesome para los íconos -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+</head>
+
+<body>
+
+    <div class="dashboard">
+
+        <!-- ENCABEZADO -->
+        <header>
+            <h1>
+                <i class="fa-solid fa-medal"></i>
+                TaekWonUp
+            </h1>
+            <button id="logout">
+                <i class="fa-solid fa-right-from-bracket"></i>
+                Salir
+            </button>
+        </header>
+
+        <!-- BIENVENIDA -->
+        <section class="card">
+            <h2>
+                <i class="fa-solid fa-user"></i>
+                Bienvenido
+            </h2>
+            <h3 id="nombreUsuario">Practicante</h3>
+        </section>
+
+        <!-- TARJETAS PRINCIPALES (GRID) -->
+        <div class="cards">
+
+            <div class="card">
+                <i class="fa-solid fa-award icono"></i>
+                <h2>Nivel Actual</h2>
+                <h1 id="nivel">Sin evaluar</h1>
+            </div>
+
+            <div class="card">
+                <i class="fa-solid fa-trophy icono"></i>
+                <h2>Puntaje</h2>
+                <h1 id="puntaje">0</h1>
+            </div>
+
+            <div class="card">
+                <i class="fa-solid fa-dumbbell icono"></i>
+                <h3>Evaluaciones</h3>
+                <h1 id="totalEvaluaciones">0</h1>
+            </div>
+
+            <div class="card">
+                <i class="fa-solid fa-calendar-days icono"></i>
+                <h3>Última evaluación</h3>
+                <p id="ultimaEvaluacion">Sin registros</p>
+            </div>
+
+        </div>
+
+        <!-- ACCIONES Y NAVEGACIÓN -->
+        <section class="card" style="margin-top: 20px;">
+            <div style="display: flex; gap: 15px; justify-content: center; flex-wrap: wrap;">
+                <button id="btnEvaluar">
+                    <i class="fa-solid fa-clipboard-check"></i>
+                    Evaluar Nivel
+                </button>
+
+                <button id="btnRutinas">
+                    <i class="fa-solid fa-person-running"></i>
+                    Mi Rutina
+                </button>
+
+                <button id="btnHistorial">
+                    <i class="fa-solid fa-table-list"></i>
+                    Ver Historial
+                </button>
+
+                <button id="btnPerfil">
+                    <i class="fa-solid fa-user"></i>
+                    Mi Perfil
+                </button>
+            </div>
+        </section>
+
+    </div>
+
+    <script type="module" src="js/dashboard.js"></script>
+
+</body>
+
+</html>

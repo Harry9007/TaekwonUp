@@ -1,0 +1,182 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+body {
+    background: #0f172a;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh; /* Permite que el fondo crezca si el contenido se extiende */
+    padding: 20px 0;
+}
+
+.contenedor {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.login {
+    width: 400px;
+    background: white;
+    padding: 40px;
+    border-radius: 20px;
+    box-shadow: 0px 15px 40px rgba(0,0,0,.25);
+    text-align: center;
+}
+
+.login h1 {
+    color: #1e3a8a;
+    margin-bottom: 10px;
+}
+
+.login p {
+    color: #555;
+    margin-bottom: 20px;
+}
+
+input, select {
+    width: 100%;
+    padding: 15px;
+    margin-bottom: 15px;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    font-size: 15px;
+    outline: none;
+    background: white;
+    transition: .3s;
+}
+
+input:focus, select:focus {
+    border-color: #2563eb;
+}
+
+button {
+    width: 100%;
+    padding: 15px;
+    border: none;
+    border-radius: 10px;
+    background: #2563eb;
+    color: white;
+    font-size: 16px;
+    cursor: pointer;
+    transition: .3s;
+}
+
+button:hover {
+    background: #1d4ed8;
+}
+
+.registro {
+    margin-top: 20px;
+}
+
+.registro a {
+    color: #2563eb;
+    text-decoration: none;
+    font-weight: 600;
+}
+
+.registro a:hover {
+    text-decoration: underline;
+}
+
+/* ==========================
+      DASHBOARD Y VISTAS
+========================== */
+
+.dashboard {
+    max-width: 900px;
+    width: 95%;
+    margin: auto;
+    padding: 20px;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 30px;
+}
+
+header h1 {
+    color: white;
+}
+
+header button {
+    width: auto;
+    padding: 12px 20px;
+}
+
+.card {
+    background: white;
+    padding: 25px;
+    border-radius: 15px;
+    box-shadow: 0 8px 20px rgba(0,0,0,.15);
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+.cards {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 20px;
+}
+
+.icono {
+    font-size: 45px;
+    color: #2563eb;
+    margin-bottom: 15px;
+}
+
+#btnEvaluar {
+    width: 250px;
+}
+
+/* Estilos adicionales para Tablas (Historial) */
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 15px;
+    background: white;
+    border-radius: 10px;
+    overflow: hidden;
+}
+
+th, td {
+    padding: 12px 15px;
+    text-align: center;
+    border-bottom: 1px solid #e2e8f0;
+}
+
+th {
+    background-color: #2563eb;
+    color: white;
+    font-weight: 600;
+}
+
+tr:hover {
+    background-color: #f8fafc;
+}
+
+/* Adaptación responsive */
+@media(max-width: 768px) {
+    .cards {
+        grid-template-columns: 1fr;
+    }
+
+    header {
+        flex-direction: column;
+        gap: 15px;
+    }
+
+    table {
+        display: block;
+        overflow-x: auto;
+    }
+}

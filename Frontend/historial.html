@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Historial | Taek WonUp</title>
+
+    <link rel="stylesheet" href="css/estilos.css">
+
+    <link rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+
+</head>
+
+<body>
+
+    <div class="dashboard">
+
+        <!-- ENCABEZADO -->
+
+        <header>
+
+            <h1>
+
+                <i class="fa-solid fa-clock-rotate-left"></i>
+
+                Historial
+
+            </h1>
+
+            <button id="volver">
+
+                <i class="fa-solid fa-arrow-left"></i>
+
+                Dashboard
+
+            </button>
+
+        </header>
+
+
+        <!-- TÍTULO -->
+
+        <section class="card">
+
+            <h2>
+
+                <i class="fa-solid fa-chart-line"></i>
+
+                Historial de Evaluaciones
+
+            </h2>
+
+            <p>
+
+                Consulta el resultado de tus evaluaciones físicas.
+
+            </p>
+
+        </section>
+
+
+        <!-- TABLA -->
+
+        <section class="card tabla-contenedor">
+
+            <table id="tablaHistorial">
+
+                <thead>
+
+                    <tr>
+
+                        <th>Fecha</th>
+
+                        <th>Flexiones</th>
+
+                        <th>Abdominales</th>
+
+                        <th>Patadas</th>
+
+                        <th>Puntaje</th>
+
+                        <th>Nivel</th>
+
+                    </tr>
+
+                </thead>
+
+                <tbody>
+
+                    <!-- Los datos serán cargados desde MySQL -->
+
+                </tbody>
+
+            </table>
+
+            <p id="mensajeHistorial"></p>
+
+        </section>
+
+    </div>
+
+
+    <script type="module" src="js/historial.js"></script>
+
+</body>
+
+</html>

@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registro - Taek WonUp</title>
+
+    <link rel="stylesheet" href="css/estilos.css">
+
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap"
+        rel="stylesheet">
+</head>
+
+<body>
+
+    <div class="contenedor">
+
+        <div class="login">
+
+            <h1>🥋 Registro</h1>
+
+            <p>Crea tu cuenta</p>
+
+            <form id="registroForm">
+
+                <input
+                    type="text"
+                    id="nombre"
+                    placeholder="Nombre completo"
+                    required>
+
+                <input
+                    type="text"
+                    id="documento"
+                    placeholder="Documento de identidad"
+                    required>
+
+                <input
+                    type="number"
+                    id="edad"
+                    placeholder="Edad"
+                    required>
+
+                <select id="sexo" required>
+                    <option value="">Seleccione el sexo</option>
+                    <option>Masculino</option>
+                    <option>Femenino</option>
+                    <option>Otro</option>
+                </select>
+
+                <input
+                    type="email"
+                    id="correo"
+                    placeholder="Correo electrónico"
+                    required>
+
+                <input
+                    type="password"
+                    id="password"
+                    placeholder="Contraseña"
+                    required>
+
+                <input
+                    type="password"
+                    id="confirmar"
+                    placeholder="Confirmar contraseña"
+                    required>
+
+                <button type="submit">
+
+                    Registrarse
+
+                </button>
+
+            </form>
+
+            <p class="registro">
+
+                ¿Ya tienes cuenta?
+
+                <a href="index.html">
+
+                    Iniciar sesión
+
+                </a>
+
+            </p>
+
+        </div>
+
+    </div>
+
+    <script type="module" src="js/registro.js"></script>
+
+</body>
+
+</html>
