@@ -21,7 +21,7 @@ formulario.addEventListener("submit", async (e) => {
             password
         );
 
-        window.location.href = "./TaekwonUp/dashboard.html";
+        window.location.href = "./dashboard.html";
 
     } catch (error) {
 
