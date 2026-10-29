@@ -86,7 +86,7 @@ formulario.addEventListener("submit", async (e) => {
 
         alert("Usuario registrado correctamente.");
 
-        window.location.href = "./TaekwonUp/index.html";
+        window.location.href = "./main/index.html";
 
     } catch (error) {
 
