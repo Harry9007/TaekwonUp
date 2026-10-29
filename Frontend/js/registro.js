@@ -86,7 +86,7 @@ formulario.addEventListener("submit", async (e) => {
 
         alert("Usuario registrado correctamente.");
 
-        window.location.href = "index.html";
+        window.location.href = "./index.html";
 
     } catch (error) {
 
