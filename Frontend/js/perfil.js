@@ -1,7 +1,10 @@
 import { auth } from "./firebase.js";
 import { onAuthStateChanged } from "https://www.gstatic.com/firebasejs/10.12.2/firebase-auth.js";
 
-const API_URL = "http://localhost:3000/api";
+// URL dinámica para desarrollo y producción
+const API_URL = window.location.hostname === "localhost" || window.location.hostname === "127.0.0.1"
+    ? "http://localhost:3000/api"
+    : "https://taekwonup.onrender.com/api";
 
 const nombre = document.getElementById("nombre");
 const documento = document.getElementById("documento");
