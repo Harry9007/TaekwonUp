@@ -1,4 +1,4 @@
-import { auth, db } from "./Firebase.js";
+import { auth, db } from "./js/Firebase.js";
 
 import {
     createUserWithEmailAndPassword
