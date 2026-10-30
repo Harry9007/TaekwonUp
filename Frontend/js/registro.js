@@ -54,8 +54,8 @@ formulario.addEventListener("submit", async (e) => {
 
         });
 
-        // Guardar en MySQL mediante la API
-        const respuesta = await fetch("https://taekwonup.onrender.com"), {
+        // Guardar en MySQL mediante la API en Render
+        const respuesta = await fetch("https://taekwonup.onrender.com/api/usuarios", {
 
             method: "POST",
 
@@ -80,7 +80,7 @@ formulario.addEventListener("submit", async (e) => {
 
         if (!respuesta.ok) {
 
-            throw new Error(resultado.mensaje);
+            throw new Error(resultado.mensaje || "Error al registrar el usuario.");
 
         }
 
