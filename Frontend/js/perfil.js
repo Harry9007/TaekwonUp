@@ -17,7 +17,7 @@ const fechaRegistro = document.getElementById("fechaRegistro");
 
 onAuthStateChanged(auth, async (user) => {
     if (!user) {
-        window.location.href = "index.html";
+        window.location.href = "./index.html";
         return;
     }
 
@@ -60,6 +60,6 @@ async function cargarPerfil(uid) {
 const btnVolver = document.getElementById("volver") || document.getElementById("btnVolver");
 if (btnVolver) {
     btnVolver.addEventListener("click", () => {
-        window.location.href = "dashboard.html";
+        window.location.href = "./dashboard.html";
     });
 }
