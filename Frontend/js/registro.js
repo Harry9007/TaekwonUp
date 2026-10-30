@@ -1,4 +1,4 @@
-import { auth, db } from "./Frontend/firebase.js";
+import { auth, db } from "Frontend/firebase.js";
 
 import {
     createUserWithEmailAndPassword
