@@ -55,7 +55,7 @@ formulario.addEventListener("submit", async (e) => {
         });
 
         // Guardar en MySQL mediante la API
-        const respuesta = await fetch("https://taekwonup.onrender.com", {
+        const respuesta = await fetch("https://taekwonup.onrender.com"), {
 
             method: "POST",
 
