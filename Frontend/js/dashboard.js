@@ -14,7 +14,7 @@ const ultimaEvaluacion = document.getElementById("ultimaEvaluacion");
 
 onAuthStateChanged(auth, async (user) => {
     if (!user) {
-        window.location.href = "index.html";
+        window.location.href = "../index.html";
         return;
     }
 
@@ -47,21 +47,21 @@ onAuthStateChanged(auth, async (user) => {
 // Eventos de navegación
 document.getElementById("logout")?.addEventListener("click", async () => {
     await signOut(auth);
-    window.location.href = "index.html";
+    window.location.href = "../index.html";
 });
 
 document.getElementById("btnEvaluar")?.addEventListener("click", () => {
-    window.location.href = "evaluacion.html";
+    window.location.href = "./evaluacion.html";
 });
 
 document.getElementById("btnHistorial")?.addEventListener("click", () => {
-    window.location.href = "historial.html";
+    window.location.href = "./historial.html";
 });
 
 document.getElementById("btnPerfil")?.addEventListener("click", () => {
-    window.location.href = "perfil.html";
+    window.location.href = "./perfil.html";
 });
 
 document.getElementById("btnRutina")?.addEventListener("click", () => {
-    window.location.href = "rutinas.html";
+    window.location.href = "./rutinas.html";
 });
